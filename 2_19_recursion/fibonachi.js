@@ -1,6 +1,6 @@
 function fibonachi(n){
     var a = 1;
-    var b = 1;
+    var b = 0;
     for (let index = 3; index <=n; index++) {
         var c = a + b;
         a = b;
@@ -9,4 +9,4 @@ function fibonachi(n){
     return b;
 }
 
-console.log(fibonachi(4))
+console.log(fibonachi(4));
