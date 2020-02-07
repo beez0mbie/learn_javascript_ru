@@ -81,7 +81,7 @@ function dominantDirectionBook(text) {
   }).filter(({name}) => name != "none");
   console.log('counted', counted);
   
-  if (counted.length == 0) return "ltr";
+  if (counted.length == 0) return "No scripts found";
 
   return counted.reduce((a, b) => a.count > b.count ? a : b).name;
 }
